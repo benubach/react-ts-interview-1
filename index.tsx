@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 
 import { Users } from './Users';
 import './style.css';
-
-interface AppProps {}
-interface AppState {
-  name: string;
-}
 
 function App() {
   return (
