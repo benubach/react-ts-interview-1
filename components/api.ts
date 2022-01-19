@@ -1,6 +1,11 @@
 const wait = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
-export async function getUsers() {
+interface IUser {
+  id: number;
+  name: string;
+}
+
+export async function getUsers(): Promise<Array<IUser>> {
   await wait(1000);
 
   return [
